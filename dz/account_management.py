@@ -10,5 +10,6 @@ admin1.remove_user("Pob")
 admin1.list_user()
 
 user1 = User(2, "Pop")
+print(user1.user_info())
 
 

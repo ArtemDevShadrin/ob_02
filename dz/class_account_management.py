@@ -4,6 +4,12 @@ class User():
         self.name = name
         self.access_level = access_level
 
+    def user_info(self):
+        return (f"Информация пользователя: \n"
+                f"Идентификационный номер - {self.id} \n"
+                f"Имя пользователя - {self.name} \n"
+                f"Уровень доступа - {self.access_level}")
+
 class Admin(User):
     user = []
     def __init__(self,  id, name, access_level, access_level_admin = "admin"):
